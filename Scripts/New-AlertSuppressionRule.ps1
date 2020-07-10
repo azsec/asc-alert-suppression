@@ -1,19 +1,20 @@
 <#
     .SYNOPSIS
-        This script is used to get a specific alert suppression rule in Azure Security Center.
+        This script is used to create a new alert suppression rule in Azure Security Center.
     .DESCRIPTION
-        This script is used to get a specific alert suppression rule in Azure Security Center.
+        This script is used to create a new alert suppression rule in Azure Security Center.
     .NOTES
         This script is written with Azure PowerShell (Az) module.
 
-        File Name    : Get-AlertSuppressionRule.ps1
+        File Name    : New-AlertSuppressionRule.ps1
         Version      : 1.0.0.0
         Author       : AzSec (https://azsec.azurewebsites.net/)
         Prerequisite : Az
         Reference    : AzSec (https://azsec.azurewebsites.net/)
     .EXAMPLE 
         .\New-AlertSuppressionRule.p1 -SubscriptionId "XXXX-XXXXX"XXXX `
-                                      -RuleName "AzSec_Website_Alert_Suppression" 
+                                      -RuleName "AzSec_Website_Alert_Suppression" `
+                                      -RulePath "./EICAR_Rule.json"
 #>
 
 Param(
