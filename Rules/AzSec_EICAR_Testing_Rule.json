@@ -1,0 +1,24 @@
+{
+    "name": "AzSec_EICAR_Testing_Rule",
+    "properties": {
+        "alertType": "AntimalwareActionTaken",
+        "state": "Enabled",
+        "reason": "Other",
+        "commnent": "Red Team testing EICAR",
+        "suppressionAlertsScope": {
+            "allOf": [
+                {
+                    "field": "entities.host.hostname",
+                    "in": [
+                        "appdev-vm",
+                        "red-vm"
+                    ]
+                },
+                {
+                    "field": "entities.malware.name",
+                    "contains": "EICAR"
+                }
+            ]
+        }
+    }
+}
