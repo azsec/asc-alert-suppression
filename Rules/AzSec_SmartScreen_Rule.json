@@ -1,0 +1,18 @@
+{
+    "name": "AzSec_SmartScreen_Rule",
+    "properties": {
+        "alertType": "SmartScreen",
+        "state": "Enabled",
+        "reason": "SpecificEntityFalsePositive",
+        "commnent": "This is false positive and this has been addressed",
+        "suppressionAlertsScope": {
+            "allOf": [
+                {
+                    "field": "entities.azureresource.resourceid",
+                    "contains": "Microsoft.Web/sites/azsec"
+                }
+            ]
+        },
+        "expirationDateUtc": "2020-09-01T00:00:00Z"
+    }
+}

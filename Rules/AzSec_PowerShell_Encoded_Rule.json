@@ -1,0 +1,25 @@
+{
+    "name": "AzSec_PowerShell_Encoded_Rule",
+    "properties": {
+        "alertType": "VM.Windows_KnownSuspiciousPowerShellScript",
+        "state": "Enabled",
+        "reason": "Other",
+        "commnent": "Red Team testing encoded PowerShell command",
+        "suppressionAlertsScope": {
+            "allOf": [
+                {
+                    "field": "entities.process.commandline",
+                    "contains": "powershell.exe -enc"
+                },
+                {
+                    "field": "entities.host.hostname",
+                    "in": [
+                        "red-vm",
+                        "red01-vm"
+                    ]
+                }
+            ]
+        },
+        "expirationDateUtc": "2020-09-01T00:00:00Z"
+    }
+}
