@@ -10,7 +10,7 @@
         Version      : 1.0.0.0
         Author       : AzSec (https://azsec.azurewebsites.net/)
         Prerequisite : Az
-        Reference    : AzSec (https://azsec.azurewebsites.net/)
+        Reference    : https://azsec.azurewebsites.net/?p=1284
     .EXAMPLE 
         .\Delete-AlertSuppressionRule.p1 -SubscriptionId "XXXX-XXXXX"XXXX `
                                          -RuleName "AzSec_Website_Alert_Suppression" 
