@@ -1,0 +1,21 @@
+{
+    "name": "AzSec_Anonymous_Storage_Blob_Rule",
+    "properties": {
+        "alertType": "Storage.Blob_AnonymousAccessAnomaly",
+        "state": "Enabled",
+        "reason": "FalsePositive",
+        "commnent": "This is false positive.",
+        "suppressionAlertsScope": {
+            "allOf": [
+                {
+                    "field": "entities.azureresource.resourceid",
+                    "in": [
+                        "/subscriptions/12d6179d-a22d-1ccd-8a56-4d3ff2e13349/resourceGroups/azsec-rg/providers/Microsoft.Storage/storageAccounts/azsecstorage",
+                        "/subscriptions/12d6179d-a22d-1ccd-8a56-4d3ff2e13349/resourceGroups/azsec-rg/providers/Microsoft.Storage/storageAccounts/azsecstorage1"
+                    ]
+                }
+            ]
+        },
+        "expirationDateUtc": "2020-09-01T00:00:00Z"
+    }
+}

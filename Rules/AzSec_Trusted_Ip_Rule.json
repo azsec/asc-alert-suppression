@@ -1,0 +1,20 @@
+{
+    "name": "AzSec_Trusted_Ip_Rule",
+    "properties": {
+        "alertType": "Network_TrafficFromUnrecommendedIP",
+        "state": "Enabled",
+        "reason": "FalsePositive",
+        "commnent": "IP is trusted",
+        "suppressionAlertsScope": {
+            "allOf": [
+                {
+                    "field": "entities.ip.address",
+                    "in": [
+                        "192.168.1.100"
+                    ]
+                }
+            ]
+        },
+        "expirationDateUtc": "2020-09-01T00:00:00Z"
+    }
+}

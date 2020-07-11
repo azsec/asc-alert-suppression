@@ -1,0 +1,32 @@
+{
+    "name": "AzSec_KeyVaultAccess_Rule",
+    "properties": {
+        "alertType": "KV_AppAnomaly",
+        "state": "Enabled",
+        "reason": "FalsePositive",
+        "commnent": "IP is trusted",
+        "suppressionAlertsScope": {
+            "allOf": [
+                {
+                    "field": "entities.account.upnsuffix",
+                    "contains": "@azsec.net"
+                },
+                {
+                    "field": "entities.azureresource.resourceid",
+                    "in": [
+                        "/subscriptions/67d6179d-a88d-1dd1-8c56-4a3ff2e13349/resourceGroups/azsec-corporate-rg/providers/Microsoft.KeyVault/vaults/shared-corporate-kv",
+                        "/subscriptions/67d6179d-a88d-1dd1-8c56-4a3ff2e13349/resourceGroups/azsec-corporate-rg/providers/Microsoft.KeyVault/vaults/app-corporate-kv"
+                    ]
+                },
+                {
+                    "field": "entities.ip.address",
+                    "in": [
+                        "192.168.1.1",
+                        "192.168.1.2"
+                    ]
+                }
+            ]
+        },
+        "expirationDateUtc": "2020-09-01T00:00:00Z"
+    }
+}
