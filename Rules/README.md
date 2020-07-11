@@ -2,12 +2,12 @@
 
 | **Sample** | **ASC Rule** |
 | ----------- | ----------- |
-| [AzSec_KeyVaultAccess_Rule](asc-alert-suppression/Rules/AzSec_KeyVaultAccess_Rule.json) | Unsual appplication accessed a Key Vault |
-| [AzSec_EICAR_Testing_Rule](asc-alert-suppression/Rules/AzSec_EICAR_Testing_Rule.json) | Antimalware Action Taken |
-| [AzSec_Anonymous_Storage_Blob_Rule](asc-alert-suppression/Rules/AzSec_Anonymous_Storage_Blob_Rule.json) | Anonymous access to a storage account |
-| [AzSec_PowerShell_Encoded_Rule](asc-alert-suppression/Rules/AzSec_PowerShell_Encoded_Rule.json) | Suspicious PowerShell Activity Detected |
-| [AzSec_SmartScreen_Rule](asc-alert-suppression/Rules/AzSec_SmartScreen_Rule.json) | Website is tagged as malicious in threat intelligence feed | 
-| [AzSec_Trusted_Ip_Rule](asc-alert-suppression/Rules/AzSec_Trusted_Ip_Rule.json) | Traffic detected from IP addresses recommended for blocking |
+| [AzSec_KeyVaultAccess_Rule](/Rules/AzSec_KeyVaultAccess_Rule.json) | Unsual appplication accessed a Key Vault |
+| [AzSec_EICAR_Testing_Rule](/Rules/AzSec_EICAR_Testing_Rule.json) | Antimalware Action Taken |
+| [AzSec_Anonymous_Storage_Blob_Rule](/Rules/AzSec_Anonymous_Storage_Blob_Rule.json) | Anonymous access to a storage account |
+| [AzSec_PowerShell_Encoded_Rule](/Rules/AzSec_PowerShell_Encoded_Rule.json) | Suspicious PowerShell Activity Detected |
+| [AzSec_SmartScreen_Rule](/Rules/AzSec_SmartScreen_Rule.json) | Website is tagged as malicious in threat intelligence feed | 
+| [AzSec_Trusted_Ip_Rule](/Rules/AzSec_Trusted_Ip_Rule.json) | Traffic detected from IP addresses recommended for blocking |
 
 # List of alert type 
 
